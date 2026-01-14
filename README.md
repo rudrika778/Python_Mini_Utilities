@@ -20,6 +20,7 @@ Each utility is a standalone Python script:
 * 💬 Random Quote Generator
 * 📁 File Renamer *(coming soon)*
 * ✅ Simple CLI To‑Do List 
+* 📱 QR Code Generator
 
 Contributors can add new tools or improve existing ones.
 
@@ -33,7 +34,8 @@ python-mini-utilities/
 ├── tools/
 │   ├── password_checker.py
 │   ├── word_counter.py
-│   └── quote_generator.py
+│   ├── quote_generator.py
+    └── qr_code_generator.py
 │
 ├── docs/
 │   └── contributing.md
