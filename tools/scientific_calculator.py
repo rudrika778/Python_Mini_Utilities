@@ -1,6 +1,5 @@
 import math
 import argparse
-import sys
 
 # Try importing readline for command history support (Unix/macOS)
 # On Windows, this requires 'pyreadline3' or standard input fallbacks
