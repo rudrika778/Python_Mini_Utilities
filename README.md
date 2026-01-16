@@ -21,6 +21,7 @@ Each utility is a standalone Python script:
 * 📁 File Renamer *(coming soon)*
 * ✅ Simple CLI To‑Do List 
 * 📱 QR Code Generator
+* 🔄 Unit Converter
 
 Contributors can add new tools or improve existing ones.
 
@@ -36,6 +37,7 @@ python-mini-utilities/
 │   ├── word_counter.py
 │   ├── quote_generator.py
     └── qr_code_generator.py
+    └── unit_converter.py
 │
 ├── docs/
 │   └── contributing.md
