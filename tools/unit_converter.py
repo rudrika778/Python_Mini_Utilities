@@ -171,16 +171,15 @@ def time_converter():
     print("6. Months (months)")
     print("7. Years (yr)")
 
-      # Conversion rates to seconds (base unit)
+     # Conversion rates to seconds (base unit)
     to_sec = {
-        '1': 1,           # Seconds
-        '2': 60,          # Minutes
-        '3': 3600,        # Hours
-        '4': 86400,       # Days
-        '5': 604800,      # Weeks
-        '6': 2592000,      # Months
-        '7': 31536000     # Years
-
+        '1': 1,           # 1 Second= 1 Second
+        '2': 60,          # 1 Minute= 60 Second
+        '3': 3600,        # 1 Hour= 3600 Second
+        '4': 86400,       # 1 Day= 86400 Second
+        '5': 604800,      # 1 Week= 604800 Second
+        '6': 2592000,     # 1 Month= 2592000 Second
+        '7': 31536000     # 1 Year= 31536000 Second
     }
 
     unit_names = {
@@ -198,7 +197,7 @@ def time_converter():
         
         value = float(input(f"\nEnter value in {unit_names[from_unit]}: "))
         
-        # Convert to liters first- then to target unit
+        # Convert to seconds first- then to target unit
         in_sec = value * to_sec[from_unit]
         result = in_sec / to_sec[to_unit]
         
@@ -233,7 +232,7 @@ def main():
             print("\n👋 Thanks for using Unit Converter! Goodbye!\n")
             break
         else:
-            print("\n❌ Invalid choice! Please select 1-4.")
+            print("\n❌ Invalid choice! Please select 1-5.")
         
         if choice in ['1', '2', '3','4']:
             continue_choice = input("\nConvert another unit? (y/n): ").strip().lower()
